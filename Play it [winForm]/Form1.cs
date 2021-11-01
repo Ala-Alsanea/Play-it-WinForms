@@ -15,8 +15,8 @@ namespace Play_it__winForm_
 
         //ver
         private string path, file;
-
-        private bool isMax = false;
+        
+        
         //property
 
         //func
@@ -25,27 +25,13 @@ namespace Play_it__winForm_
       public Form_mediaPlayer()
         {
             InitializeComponent();
+            trackBar_media.Value = 0;
+            
         }
 
-        private void pnl_top_DoubleClick(object sender, EventArgs e)
-        {
-            //if (isMax)
-            //{
-            //    this.WindowState = FormWindowState.Normal;
-            //    isMax = false;
-            //    return;
-                
-            //}
+       
 
-            this.WindowState = FormWindowState.Maximized;
-            isMax = true;
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-        }
+       
 
         private void trackBar_voice_Scroll(object sender, ScrollEventArgs e)
         {
@@ -55,33 +41,48 @@ namespace Play_it__winForm_
         private void timer1_Tick(object sender, EventArgs e)
         {
 
+            try
+            {
+                if (wmp.playState == WMPLib.WMPPlayState.wmppsPlaying)
+                {
+                    trackBar_media.Maximum = (int) wmp.Ctlcontrols.currentItem.duration;
+                    trackBar_media.Value = (int)wmp.Ctlcontrols.currentPosition;
+
+                }
+
+                lbl_inProgress.Text = wmp.Ctlcontrols.currentPositionString;
+                lbl_duration.Text = wmp.Ctlcontrols.currentItem.durationString;
+
+                        // when media reach to th end
+                if (trackBar_media.Value == trackBar_media.Maximum)
+                {
+                    timer1.Stop();
+                    btn_start.Show();
+                    btn_pause.Hide();
+                    trackBar_media.Value = 0;
+                    lbl_duration.Text = "00:00:00";
+                    lbl_inProgress.Text = "00:00";
+                    trackBar_media.Value = 0;
+                    btn_pause.Hide();
+                    btn_start.Show();
+                    wmp.Ctlcontrols.stop();
+
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                throw;
+            }
+
             // init track bar
-            if (wmp.playState == WMPLib.WMPPlayState.wmppsPlaying)
-            {
-                trackBar_media.Maximum = (int) wmp.Ctlcontrols.currentItem.duration;
-                trackBar_media.Value = (int)wmp.Ctlcontrols.currentPosition;
-            }
-
-            lbl_inProgress.Text = wmp.Ctlcontrols.currentPositionString;
-            lbl_duration.Text = wmp.Ctlcontrols.currentItem.durationString;
-
-            // when media reach to th end
-            if (trackBar_media.Value == trackBar_media.Maximum)
-            {
-                timer1.Stop();
-                btn_start.Show();
-                btn_pause.Hide();
-                trackBar_media.Value = 0;
-                lbl_duration.Text = "00:00:00";
-                lbl_inProgress.Text = "00:00";
-
-            }
+           
 
         }
 
         private void trackBar_media_Scroll(object sender, ScrollEventArgs e)
         {
-            //wmp.Ctlcontrols.currentPosition = trackBar_media.Value;
+            wmp.Ctlcontrols.currentPosition = trackBar_media.Value;
         }
 
         private void btn_start_Click(object sender, EventArgs e)
@@ -107,9 +108,36 @@ namespace Play_it__winForm_
             }
         }
 
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+        private void btn_max_Click(object sender, EventArgs e)
+        {
+            int round=0;
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+                btn_max.Image = Properties.Resources.max3;
+                round = elipse_form.BorderRadius;
+                elipse_form.BorderRadius = 0;
+                return;
+            }
+            this.WindowState = FormWindowState.Normal;
+            btn_max.Image = Properties.Resources.maxSquare2;
+            elipse_form.BorderRadius = round;
+        }
+
+        private void btn_min_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
         private void btn_openFile_Click(object sender, EventArgs e)
         {
-            //openFileDialog1.Filter = "";
+            openFileDialog1.Filter = " video(*.mp4)|*.mp4| Audio(*.mp3)|*.mp3";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 file = openFileDialog1.SafeFileName;
@@ -118,10 +146,13 @@ namespace Play_it__winForm_
                 wmp.URL = path;
                 wmp.Ctlcontrols.play();
                 wmp.settings.enableErrorDialogs = true;
+                wmp.settings.volume = trackBar_voice.Value;
                 wmp.settings.mute = false;
                 timer1.Start();
+                pic_logo.Hide();
                 btn_start.Hide();
                 btn_pause.Show();
+                ibi_title.Text += " ( " + file + " )";
 
             }
         }
