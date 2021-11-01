@@ -69,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,6 +102,42 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn minus 10s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn plus 10s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high vioce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low voice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pervious button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
