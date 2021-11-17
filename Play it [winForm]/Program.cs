@@ -16,7 +16,7 @@ namespace Play_it__winForm_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_mediaPlayer());
+            Application.Run(new MainForm());
         }
     }
 }

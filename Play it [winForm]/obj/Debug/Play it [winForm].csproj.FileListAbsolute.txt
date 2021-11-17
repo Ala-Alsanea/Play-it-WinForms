@@ -13,3 +13,19 @@ D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\C# Projects\C#_Final_P
 D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play it [winForm].exe
 D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play it [winForm].pdb
 D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play_it__winForm_.Form_mediaPlayer.resources
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\bin\Debug\Play it [winForm].exe.config
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Interop.WMPLib.dll
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\AxInterop.WMPLib.dll
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play it [winForm].csproj.ResolveComReference.cache
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play it [winForm].exe
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play it [winForm].pdb
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\bin\Debug\Play it [winForm].exe
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\bin\Debug\Play it [winForm].pdb
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\bin\Debug\Guna.UI2.dll
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\bin\Debug\Interop.WMPLib.dll
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\bin\Debug\AxInterop.WMPLib.dll
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play it [winForm].csprojResolveAssemblyReference.cache
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play_it__winForm_.MainForm.resources
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play_it__winForm_.Form_mediaPlayer.resources
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play_it__winForm_.Properties.Resources.resources
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play it [winForm].csproj.GenerateResource.Cache
