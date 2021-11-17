@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Play_it__winForm_.UserControls.openFile;
 
 namespace Play_it__winForm_
 {
@@ -20,7 +21,10 @@ namespace Play_it__winForm_
 
 
         //function
-
+        void clearPnl(Panel p)
+        {
+            
+        }
 
 
         //auto Function
@@ -29,6 +33,9 @@ namespace Play_it__winForm_
         public MainForm()
         {
             InitializeComponent();
+            Control_OpenFile op = new Control_OpenFile();
+            pnl_switch.Controls.Add(op);
+            op.Dock = DockStyle.Fill;
         }
 
         private void btn_close_Click(object sender, EventArgs e)

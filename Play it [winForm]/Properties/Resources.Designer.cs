@@ -63,6 +63,26 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Arrow_1_2x {
+            get {
+                object obj = ResourceManager.GetObject("Arrow_1@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Arrow_2_2x {
+            get {
+                object obj = ResourceManager.GetObject("Arrow_2@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_minus_10s {
             get {
                 object obj = ResourceManager.GetObject("btn minus 10s", resourceCulture);
@@ -106,6 +126,16 @@ namespace Play_it__winForm_.Properties {
         internal static System.Drawing.Bitmap logo_icon {
             get {
                 object obj = ResourceManager.GetObject("logo_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_icon_1_3x {
+            get {
+                object obj = ResourceManager.GetObject("logo_icon_1@3x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +256,16 @@ namespace Play_it__winForm_.Properties {
         internal static System.Drawing.Bitmap pervious_button {
             get {
                 object obj = ResourceManager.GetObject("pervious button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Puls_2x {
+            get {
+                object obj = ResourceManager.GetObject("Puls@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

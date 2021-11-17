@@ -29,3 +29,4 @@ D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Fin
 D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play_it__winForm_.Form_mediaPlayer.resources
 D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play_it__winForm_.Properties.Resources.resources
 D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play it [winForm].csproj.GenerateResource.Cache
+D:\2.FILE\Computer_Science\Sem 5\Event Driven Programming\Lab\C# Projects\C#_Final_Project [play it]\play it\Play it [winForm]\obj\Debug\Play_it__winForm_.UserControls.openFile.Control_OpenFile.resources

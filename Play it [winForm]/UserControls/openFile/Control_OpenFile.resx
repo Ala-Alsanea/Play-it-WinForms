@@ -117,71 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn plus 10s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn plus 10s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Arrow_1@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Arrow_1@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="min3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\min3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maxSquare" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxSquare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="min" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Puls@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Puls@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="next button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="max_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\max_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Arrow_2@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Arrow_2@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="min2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\min2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pervious button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pervious button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="high vioce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\high vioce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maxSquare2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxSquare2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="low voice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\low voice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="max3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\max3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="start button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\start button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn minus 10s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn minus 10s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pause button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pause button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="max2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\max2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo_icon_1@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo_icon_1@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

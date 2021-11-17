@@ -20,6 +20,14 @@ namespace Play_it__winForm_
         //property
 
         //func
+        void startMedia()
+        {
+            wmp.Ctlcontrols.play();
+            btn_start.Hide();
+            btn_pause.Show();
+        }
+
+
 
         //gen func
       public Form_mediaPlayer()
@@ -29,9 +37,22 @@ namespace Play_it__winForm_
             
         }
 
-       
+      public Form_mediaPlayer(string f, string p)
+      {
+          InitializeComponent();
+          trackBar_media.Value = 0;
 
-       
+          file = f;
+          path = p;
+          wmp.URL = path;
+          startMedia();
+          timer1.Start();
+          pic_logo.Visible = false;
+
+
+      }
+
+
 
         private void trackBar_voice_Scroll(object sender, ScrollEventArgs e)
         {
@@ -71,8 +92,10 @@ namespace Play_it__winForm_
             }
             catch (Exception exception)
             {
-                Console.WriteLine(exception);
-                throw;
+                timer1.Stop();
+                MessageBox.Show(exception.ToString());
+                
+
             }
 
             // init track bar
@@ -89,9 +112,7 @@ namespace Play_it__winForm_
         {
             if (wmp.URL != null)
             {
-                wmp.Ctlcontrols.play();
-                btn_start.Hide();
-                btn_pause.Show();
+                startMedia();
 
             }
  
@@ -135,6 +156,14 @@ namespace Play_it__winForm_
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+
+            MainForm m = new MainForm();
+            m.Show();
+            this.Close();
+        }
+
         private void btn_openFile_Click(object sender, EventArgs e)
         {
             openFileDialog1.Filter = " video(*.mp4)|*.mp4| Audio(*.mp3)|*.mp3";
@@ -152,7 +181,7 @@ namespace Play_it__winForm_
                 pic_logo.Hide();
                 btn_start.Hide();
                 btn_pause.Show();
-                ibi_title.Text += " ( " + file + " )";
+                lbl_title.Text += " ( " + file + " )";
 
             }
         }
