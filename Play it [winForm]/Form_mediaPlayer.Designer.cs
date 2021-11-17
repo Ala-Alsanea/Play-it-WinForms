@@ -49,6 +49,7 @@
             this.btn_min = new Guna.UI2.WinForms.Guna2Button();
             this.btn_max = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_openFile = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btn_plus10 = new System.Windows.Forms.PictureBox();
@@ -57,7 +58,6 @@
             this.btn_previous = new System.Windows.Forms.PictureBox();
             this.btn_start = new System.Windows.Forms.PictureBox();
             this.btn_pause = new System.Windows.Forms.PictureBox();
-            this.btn_openFile = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmp)).BeginInit();
             this.pnl_top.SuspendLayout();
@@ -109,7 +109,7 @@
             // 
             // trackBar_media
             // 
-            this.trackBar_media.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.trackBar_media.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBar_media.FillColor = System.Drawing.Color.White;
             this.trackBar_media.HoverState.Parent = this.trackBar_media;
@@ -122,7 +122,7 @@
             // 
             // lbl_inProgress
             // 
-            this.lbl_inProgress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lbl_inProgress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_inProgress.AutoSize = true;
             this.lbl_inProgress.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,7 +135,7 @@
             // 
             // lbl_duration
             // 
-            this.lbl_duration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lbl_duration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_duration.AutoSize = true;
             this.lbl_duration.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,7 +232,9 @@
             // 
             // pic_logo
             // 
-            this.pic_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pic_logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pic_logo.Image = global::Play_it__winForm_.Properties.Resources.logo_icon_1_3x;
             this.pic_logo.Location = new System.Drawing.Point(412, 177);
@@ -308,6 +310,25 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            // 
+            // btn_openFile
+            // 
+            this.btn_openFile.Animated = true;
+            this.btn_openFile.BorderRadius = 10;
+            this.btn_openFile.CheckedState.Parent = this.btn_openFile;
+            this.btn_openFile.CustomImages.Parent = this.btn_openFile;
+            this.btn_openFile.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.btn_openFile.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_openFile.ForeColor = System.Drawing.Color.White;
+            this.btn_openFile.HoverState.Parent = this.btn_openFile;
+            this.btn_openFile.Image = global::Play_it__winForm_.Properties.Resources.Puls_2x;
+            this.btn_openFile.Location = new System.Drawing.Point(50, 48);
+            this.btn_openFile.Name = "btn_openFile";
+            this.btn_openFile.ShadowDecoration.Parent = this.btn_openFile;
+            this.btn_openFile.Size = new System.Drawing.Size(104, 30);
+            this.btn_openFile.TabIndex = 4;
+            this.btn_openFile.Text = "Browse";
+            this.btn_openFile.Click += new System.EventHandler(this.btn_openFile_Click);
             // 
             // pictureBox10
             // 
@@ -398,25 +419,6 @@
             this.btn_pause.TabIndex = 3;
             this.btn_pause.TabStop = false;
             this.btn_pause.Click += new System.EventHandler(this.btn_pause_Click);
-            // 
-            // btn_openFile
-            // 
-            this.btn_openFile.Animated = true;
-            this.btn_openFile.BorderRadius = 10;
-            this.btn_openFile.CheckedState.Parent = this.btn_openFile;
-            this.btn_openFile.CustomImages.Parent = this.btn_openFile;
-            this.btn_openFile.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.btn_openFile.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_openFile.ForeColor = System.Drawing.Color.White;
-            this.btn_openFile.HoverState.Parent = this.btn_openFile;
-            this.btn_openFile.Image = global::Play_it__winForm_.Properties.Resources.Puls_2x;
-            this.btn_openFile.Location = new System.Drawing.Point(50, 48);
-            this.btn_openFile.Name = "btn_openFile";
-            this.btn_openFile.ShadowDecoration.Parent = this.btn_openFile;
-            this.btn_openFile.Size = new System.Drawing.Size(104, 30);
-            this.btn_openFile.TabIndex = 4;
-            this.btn_openFile.Text = "Browse";
-            this.btn_openFile.Click += new System.EventHandler(this.btn_openFile_Click);
             // 
             // Form_mediaPlayer
             // 

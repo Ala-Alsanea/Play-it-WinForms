@@ -59,11 +59,11 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="mediaPlayerForm.cs">
+    <Compile Include="Form_mediaPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mediaPlayerForm.Designer.cs">
-      <DependentUpon>mediaPlayerForm.cs</DependentUpon>
+    <Compile Include="Form_mediaPlayer.Designer.cs">
+      <DependentUpon>Form_mediaPlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,8 +76,8 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mediaPlayerForm.resx">
-      <DependentUpon>mediaPlayerForm.cs</DependentUpon>
+    <EmbeddedResource Include="Form_mediaPlayer.resx">
+      <DependentUpon>Form_mediaPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
