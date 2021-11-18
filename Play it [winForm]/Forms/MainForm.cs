@@ -8,24 +8,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Play_it__winForm_.UserControls.openFile;
+using Play_it__winForm_.UserControls.playlist;
+using Guna.UI2;
+using Guna.UI2.WinForms;
 
 namespace Play_it__winForm_
 {
     public partial class MainForm : Form
     {
         //variable
-
+        
 
         //property
         
-
+            
 
         //function
-        void clearPnl(Panel p)
+        void userControl_open(UserControl uc)
         {
-            
+            uc.Dock = DockStyle.Fill;
+            pnl_switch.Controls.Clear();
+            pnl_switch.Controls.Add(uc);
+            uc.BringToFront();
+
         }
 
+        void restBtnColor(params Guna2Button [] btns)
+        {
+            foreach (var btn in btns)
+            {
+                btn.FillColor = Color.FromArgb(255, 48, 171, 242);
+            }
+
+        }
 
         //auto Function
 
@@ -33,9 +48,7 @@ namespace Play_it__winForm_
         public MainForm()
         {
             InitializeComponent();
-            Control_OpenFile op = new Control_OpenFile();
-            pnl_switch.Controls.Add(op);
-            op.Dock = DockStyle.Fill;
+            btn_OpenFile.PerformClick();
         }
 
         private void btn_close_Click(object sender, EventArgs e)
@@ -62,6 +75,29 @@ namespace Play_it__winForm_
         private void btn_min_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_OpenFile_Click(object sender, EventArgs e)
+        {
+            Control_OpenFile openFile = new Control_OpenFile();
+
+            userControl_open(openFile);
+            Guna2Button btn = (Guna2Button)sender;
+            restBtnColor(btn_OpenFile, btn_Playlist);
+            btn.FillColor = Color.FromArgb(255, 40, 127, 178);
+        
+
+
+
+    }
+
+        private void btn_Playlist_Click(object sender, EventArgs e)
+        {
+            Control_playlist cp = new Control_playlist();
+            userControl_open(cp);
+            Guna2Button btn = (Guna2Button)sender;
+            restBtnColor(btn_OpenFile,btn_Playlist);
+            btn.FillColor = Color.FromArgb(255, 40, 127, 178);
         }
     }
 }

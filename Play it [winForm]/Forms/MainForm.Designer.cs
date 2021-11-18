@@ -33,21 +33,25 @@
             this.elipse_form = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnl_top = new System.Windows.Forms.Panel();
             this.ibi_title = new System.Windows.Forms.Label();
-            this.btn_close = new Guna.UI2.WinForms.Guna2Button();
-            this.lbl_text = new System.Windows.Forms.Label();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_OpenFile = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Playlist = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pnl_switch = new System.Windows.Forms.Panel();
             this.btn_min = new Guna.UI2.WinForms.Guna2Button();
             this.btn_max = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_close = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_text = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Playlist = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_OpenFile = new Guna.UI2.WinForms.Guna2Button();
+            this.pnl_switch = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_version = new System.Windows.Forms.Label();
             this.pnl_top.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // elipse_form
@@ -75,121 +79,11 @@
             this.ibi_title.AutoSize = true;
             this.ibi_title.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibi_title.ForeColor = System.Drawing.Color.White;
-            this.ibi_title.Location = new System.Drawing.Point(63, 9);
+            this.ibi_title.Location = new System.Drawing.Point(55, 9);
             this.ibi_title.Name = "ibi_title";
             this.ibi_title.Size = new System.Drawing.Size(40, 15);
             this.ibi_title.TabIndex = 6;
             this.ibi_title.Text = "Play it";
-            // 
-            // btn_close
-            // 
-            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_close.Animated = true;
-            this.btn_close.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_close.CheckedState.Parent = this.btn_close;
-            this.btn_close.CustomImages.Parent = this.btn_close;
-            this.btn_close.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.btn_close.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_close.ForeColor = System.Drawing.Color.White;
-            this.btn_close.HoverState.FillColor = System.Drawing.Color.Red;
-            this.btn_close.HoverState.Parent = this.btn_close;
-            this.btn_close.Location = new System.Drawing.Point(914, 0);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.ShadowDecoration.Parent = this.btn_close;
-            this.btn_close.Size = new System.Drawing.Size(33, 33);
-            this.btn_close.TabIndex = 5;
-            this.btn_close.Text = "X";
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
-            // lbl_text
-            // 
-            this.lbl_text.AutoSize = true;
-            this.lbl_text.ForeColor = System.Drawing.Color.White;
-            this.lbl_text.Location = new System.Drawing.Point(68, 9);
-            this.lbl_text.Name = "lbl_text";
-            this.lbl_text.Size = new System.Drawing.Size(0, 13);
-            this.lbl_text.TabIndex = 4;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = this.pnl_top;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.guna2Button3);
-            this.panel1.Controls.Add(this.btn_Playlist);
-            this.panel1.Controls.Add(this.btn_OpenFile);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 33);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(196, 448);
-            this.panel1.TabIndex = 2;
-            // 
-            // btn_OpenFile
-            // 
-            this.btn_OpenFile.BorderRadius = 10;
-            this.btn_OpenFile.CheckedState.Parent = this.btn_OpenFile;
-            this.btn_OpenFile.CustomImages.Parent = this.btn_OpenFile;
-            this.btn_OpenFile.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            this.btn_OpenFile.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_OpenFile.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenFile.HoverState.Parent = this.btn_OpenFile;
-            this.btn_OpenFile.Location = new System.Drawing.Point(24, 78);
-            this.btn_OpenFile.Name = "btn_OpenFile";
-            this.btn_OpenFile.ShadowDecoration.Parent = this.btn_OpenFile;
-            this.btn_OpenFile.Size = new System.Drawing.Size(149, 45);
-            this.btn_OpenFile.TabIndex = 0;
-            this.btn_OpenFile.Text = "Open file";
-            // 
-            // btn_Playlist
-            // 
-            this.btn_Playlist.BorderRadius = 10;
-            this.btn_Playlist.CheckedState.Parent = this.btn_Playlist;
-            this.btn_Playlist.CustomImages.Parent = this.btn_Playlist;
-            this.btn_Playlist.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            this.btn_Playlist.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Playlist.ForeColor = System.Drawing.Color.White;
-            this.btn_Playlist.HoverState.Parent = this.btn_Playlist;
-            this.btn_Playlist.Location = new System.Drawing.Point(24, 143);
-            this.btn_Playlist.Name = "btn_Playlist";
-            this.btn_Playlist.ShadowDecoration.Parent = this.btn_Playlist;
-            this.btn_Playlist.Size = new System.Drawing.Size(149, 45);
-            this.btn_Playlist.TabIndex = 0;
-            this.btn_Playlist.Text = "Playlist";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(24, 210);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(149, 45);
-            this.guna2Button3.TabIndex = 0;
-            this.guna2Button3.Text = "Ahmed Task";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(127)))), ((int)(((byte)(178)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 417);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(196, 31);
-            this.panel2.TabIndex = 1;
-            // 
-            // pnl_switch
-            // 
-            this.pnl_switch.Location = new System.Drawing.Point(194, 33);
-            this.pnl_switch.Name = "pnl_switch";
-            this.pnl_switch.Size = new System.Drawing.Size(753, 448);
-            this.pnl_switch.TabIndex = 3;
             // 
             // btn_min
             // 
@@ -229,15 +123,158 @@
             this.btn_max.TabIndex = 5;
             this.btn_max.Click += new System.EventHandler(this.btn_max_Click);
             // 
+            // btn_close
+            // 
+            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_close.Animated = true;
+            this.btn_close.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_close.CheckedState.Parent = this.btn_close;
+            this.btn_close.CustomImages.Parent = this.btn_close;
+            this.btn_close.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.btn_close.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.ForeColor = System.Drawing.Color.White;
+            this.btn_close.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btn_close.HoverState.Parent = this.btn_close;
+            this.btn_close.Location = new System.Drawing.Point(914, 0);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.ShadowDecoration.Parent = this.btn_close;
+            this.btn_close.Size = new System.Drawing.Size(33, 33);
+            this.btn_close.TabIndex = 5;
+            this.btn_close.Text = "X";
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // lbl_text
+            // 
+            this.lbl_text.AutoSize = true;
+            this.lbl_text.ForeColor = System.Drawing.Color.White;
+            this.lbl_text.Location = new System.Drawing.Point(68, 9);
+            this.lbl_text.Name = "lbl_text";
+            this.lbl_text.Size = new System.Drawing.Size(0, 13);
+            this.lbl_text.TabIndex = 4;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Play_it__winForm_.Properties.Resources.logo_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 1);
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(62, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(47, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this.pnl_top;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.guna2Button3);
+            this.panel1.Controls.Add(this.btn_Playlist);
+            this.panel1.Controls.Add(this.btn_OpenFile);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 33);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(196, 448);
+            this.panel1.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(127)))), ((int)(((byte)(178)))));
+            this.panel2.Controls.Add(this.lbl_version);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 417);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(196, 31);
+            this.panel2.TabIndex = 1;
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.Animated = true;
+            this.guna2Button3.BorderRadius = 10;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Location = new System.Drawing.Point(21, 295);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(149, 45);
+            this.guna2Button3.TabIndex = 0;
+            this.guna2Button3.Text = "Ahmed Task";
+            // 
+            // btn_Playlist
+            // 
+            this.btn_Playlist.Animated = true;
+            this.btn_Playlist.BorderRadius = 10;
+            this.btn_Playlist.CheckedState.Parent = this.btn_Playlist;
+            this.btn_Playlist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Playlist.CustomImages.Parent = this.btn_Playlist;
+            this.btn_Playlist.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_Playlist.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Playlist.ForeColor = System.Drawing.Color.White;
+            this.btn_Playlist.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
+            this.btn_Playlist.HoverState.Parent = this.btn_Playlist;
+            this.btn_Playlist.Location = new System.Drawing.Point(21, 234);
+            this.btn_Playlist.Name = "btn_Playlist";
+            this.btn_Playlist.ShadowDecoration.Parent = this.btn_Playlist;
+            this.btn_Playlist.Size = new System.Drawing.Size(149, 45);
+            this.btn_Playlist.TabIndex = 0;
+            this.btn_Playlist.Text = "Playlist";
+            this.btn_Playlist.Click += new System.EventHandler(this.btn_Playlist_Click);
+            // 
+            // btn_OpenFile
+            // 
+            this.btn_OpenFile.Animated = true;
+            this.btn_OpenFile.BorderRadius = 10;
+            this.btn_OpenFile.CheckedState.Parent = this.btn_OpenFile;
+            this.btn_OpenFile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_OpenFile.CustomImages.Parent = this.btn_OpenFile;
+            this.btn_OpenFile.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_OpenFile.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_OpenFile.ForeColor = System.Drawing.Color.White;
+            this.btn_OpenFile.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
+            this.btn_OpenFile.HoverState.Parent = this.btn_OpenFile;
+            this.btn_OpenFile.Location = new System.Drawing.Point(21, 174);
+            this.btn_OpenFile.Name = "btn_OpenFile";
+            this.btn_OpenFile.ShadowDecoration.Parent = this.btn_OpenFile;
+            this.btn_OpenFile.Size = new System.Drawing.Size(149, 45);
+            this.btn_OpenFile.TabIndex = 0;
+            this.btn_OpenFile.Text = "Open file";
+            this.btn_OpenFile.Click += new System.EventHandler(this.btn_OpenFile_Click);
+            // 
+            // pnl_switch
+            // 
+            this.pnl_switch.Location = new System.Drawing.Point(194, 33);
+            this.pnl_switch.Name = "pnl_switch";
+            this.pnl_switch.Size = new System.Drawing.Size(753, 448);
+            this.pnl_switch.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Play_it__winForm_.Properties.Resources.logo_icon_1_3x;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(149, 99);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lbl_version
+            // 
+            this.lbl_version.AutoSize = true;
+            this.lbl_version.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_version.ForeColor = System.Drawing.Color.White;
+            this.lbl_version.Location = new System.Drawing.Point(62, 5);
+            this.lbl_version.Name = "lbl_version";
+            this.lbl_version.Size = new System.Drawing.Size(52, 26);
+            this.lbl_version.TabIndex = 0;
+            this.lbl_version.Text = "v 0.4";
             // 
             // MainForm
             // 
@@ -254,8 +291,11 @@
             this.Text = "MainForm";
             this.pnl_top.ResumeLayout(false);
             this.pnl_top.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -277,5 +317,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button btn_Playlist;
         private Guna.UI2.WinForms.Guna2Button btn_OpenFile;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_version;
     }
 }

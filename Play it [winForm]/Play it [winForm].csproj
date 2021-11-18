@@ -32,7 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon_3.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2">
@@ -53,16 +54,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_mediaPlayer.cs">
+    <Compile Include="Forms\Form_mediaPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_mediaPlayer.Designer.cs">
+    <Compile Include="Forms\Form_mediaPlayer.Designer.cs">
       <DependentUpon>Form_mediaPlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -73,10 +74,16 @@
     <Compile Include="UserControls\openFile\Control_OpenFile.Designer.cs">
       <DependentUpon>Control_OpenFile.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainForm.resx">
+    <Compile Include="UserControls\playlist\Control_playlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\playlist\Control_playlist.Designer.cs">
+      <DependentUpon>Control_playlist.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_mediaPlayer.resx">
+    <EmbeddedResource Include="Forms\Form_mediaPlayer.resx">
       <DependentUpon>Form_mediaPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -91,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\openFile\Control_OpenFile.resx">
       <DependentUpon>Control_OpenFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\playlist\Control_playlist.resx">
+      <DependentUpon>Control_playlist.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -179,7 +189,6 @@
     <None Include="Resources\maxSquare2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon_3.ico" />
     <None Include="Resources\logo_icon_1%403x.png" />
     <None Include="Resources\Arrow_2%402x.png" />
     <None Include="Resources\Arrow_1%402x.png" />
