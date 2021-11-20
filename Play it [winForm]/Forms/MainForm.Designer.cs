@@ -33,25 +33,25 @@
             this.elipse_form = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnl_top = new System.Windows.Forms.Panel();
             this.ibi_title = new System.Windows.Forms.Label();
-            this.btn_min = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_max = new Guna.UI2.WinForms.Guna2Button();
             this.btn_close = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_text = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_version = new System.Windows.Forms.Label();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Playlist = new Guna.UI2.WinForms.Guna2Button();
             this.btn_OpenFile = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_switch = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbl_version = new System.Windows.Forms.Label();
+            this.btn_min = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_max = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnl_top.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // elipse_form
@@ -85,44 +85,6 @@
             this.ibi_title.TabIndex = 6;
             this.ibi_title.Text = "Play it";
             // 
-            // btn_min
-            // 
-            this.btn_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_min.Animated = true;
-            this.btn_min.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_min.CheckedState.Parent = this.btn_min;
-            this.btn_min.CustomImages.Parent = this.btn_min;
-            this.btn_min.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.btn_min.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_min.ForeColor = System.Drawing.Color.White;
-            this.btn_min.HoverState.Parent = this.btn_min;
-            this.btn_min.Image = global::Play_it__winForm_.Properties.Resources.min3;
-            this.btn_min.Location = new System.Drawing.Point(836, 0);
-            this.btn_min.Name = "btn_min";
-            this.btn_min.ShadowDecoration.Parent = this.btn_min;
-            this.btn_min.Size = new System.Drawing.Size(33, 33);
-            this.btn_min.TabIndex = 5;
-            this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
-            // 
-            // btn_max
-            // 
-            this.btn_max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_max.Animated = true;
-            this.btn_max.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_max.CheckedState.Parent = this.btn_max;
-            this.btn_max.CustomImages.Parent = this.btn_max;
-            this.btn_max.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.btn_max.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_max.ForeColor = System.Drawing.Color.White;
-            this.btn_max.HoverState.Parent = this.btn_max;
-            this.btn_max.Image = global::Play_it__winForm_.Properties.Resources.maxSquare2;
-            this.btn_max.Location = new System.Drawing.Point(875, 0);
-            this.btn_max.Name = "btn_max";
-            this.btn_max.ShadowDecoration.Parent = this.btn_max;
-            this.btn_max.Size = new System.Drawing.Size(33, 33);
-            this.btn_max.TabIndex = 5;
-            this.btn_max.Click += new System.EventHandler(this.btn_max_Click);
-            // 
             // btn_close
             // 
             this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -152,16 +114,6 @@
             this.lbl_text.Size = new System.Drawing.Size(0, 13);
             this.lbl_text.TabIndex = 4;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Play_it__winForm_.Properties.Resources.logo_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.TargetControl = this.pnl_top;
@@ -189,6 +141,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(196, 31);
             this.panel2.TabIndex = 1;
+            // 
+            // lbl_version
+            // 
+            this.lbl_version.AutoSize = true;
+            this.lbl_version.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_version.ForeColor = System.Drawing.Color.White;
+            this.lbl_version.Location = new System.Drawing.Point(62, 5);
+            this.lbl_version.Name = "lbl_version";
+            this.lbl_version.Size = new System.Drawing.Size(52, 26);
+            this.lbl_version.TabIndex = 0;
+            this.lbl_version.Text = "v 0.4";
             // 
             // guna2Button3
             // 
@@ -250,6 +213,9 @@
             // 
             // pnl_switch
             // 
+            this.pnl_switch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_switch.Location = new System.Drawing.Point(194, 33);
             this.pnl_switch.Name = "pnl_switch";
             this.pnl_switch.Size = new System.Drawing.Size(753, 448);
@@ -265,16 +231,53 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // lbl_version
+            // btn_min
             // 
-            this.lbl_version.AutoSize = true;
-            this.lbl_version.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_version.ForeColor = System.Drawing.Color.White;
-            this.lbl_version.Location = new System.Drawing.Point(62, 5);
-            this.lbl_version.Name = "lbl_version";
-            this.lbl_version.Size = new System.Drawing.Size(52, 26);
-            this.lbl_version.TabIndex = 0;
-            this.lbl_version.Text = "v 0.4";
+            this.btn_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_min.Animated = true;
+            this.btn_min.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_min.CheckedState.Parent = this.btn_min;
+            this.btn_min.CustomImages.Parent = this.btn_min;
+            this.btn_min.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.btn_min.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_min.ForeColor = System.Drawing.Color.White;
+            this.btn_min.HoverState.Parent = this.btn_min;
+            this.btn_min.Image = global::Play_it__winForm_.Properties.Resources.min3;
+            this.btn_min.Location = new System.Drawing.Point(836, 0);
+            this.btn_min.Name = "btn_min";
+            this.btn_min.ShadowDecoration.Parent = this.btn_min;
+            this.btn_min.Size = new System.Drawing.Size(33, 33);
+            this.btn_min.TabIndex = 5;
+            this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
+            // 
+            // btn_max
+            // 
+            this.btn_max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_max.Animated = true;
+            this.btn_max.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_max.CheckedState.Parent = this.btn_max;
+            this.btn_max.CustomImages.Parent = this.btn_max;
+            this.btn_max.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.btn_max.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_max.ForeColor = System.Drawing.Color.White;
+            this.btn_max.HoverState.Parent = this.btn_max;
+            this.btn_max.Image = global::Play_it__winForm_.Properties.Resources.maxSquare2;
+            this.btn_max.Location = new System.Drawing.Point(875, 0);
+            this.btn_max.Name = "btn_max";
+            this.btn_max.ShadowDecoration.Parent = this.btn_max;
+            this.btn_max.Size = new System.Drawing.Size(33, 33);
+            this.btn_max.TabIndex = 5;
+            this.btn_max.Click += new System.EventHandler(this.btn_max_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Play_it__winForm_.Properties.Resources.logo_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // MainForm
             // 
@@ -291,11 +294,11 @@
             this.Text = "MainForm";
             this.pnl_top.ResumeLayout(false);
             this.pnl_top.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

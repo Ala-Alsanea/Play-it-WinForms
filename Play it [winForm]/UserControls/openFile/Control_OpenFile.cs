@@ -30,6 +30,12 @@ namespace Play_it__winForm_.UserControls.openFile
         public Control_OpenFile()
         {
             InitializeComponent();
+
+            lbl_string.Left = (this.Size.Width / 2) - (lbl_string.Size.Width / 2);
+            lbl_string.Top = (this.Size.Height / 2) - (lbl_string.Size.Height / 2);
+
+            btn_browse.Left = (this.Size.Width / 2) - (btn_browse.Size.Width / 2);
+            btn_browse.Top = (this.Size.Height / 2) - (btn_browse.Size.Height / 2) + 80;
         }
 
         private void btn_browse_Click(object sender, EventArgs e)
@@ -48,6 +54,23 @@ namespace Play_it__winForm_.UserControls.openFile
 
             }
 
+        }
+
+      
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+            lbl_string.Left = (this.Size.Width / 2)-(lbl_string.Size.Width/2);
+            lbl_string.Top = (this.Size.Height / 2) - (lbl_string.Size.Height / 2);
+
+            btn_browse.Left= (this.Size.Width / 2) - (btn_browse.Size.Width / 2);
+            btn_browse.Top = (this.Size.Height / 2) - (btn_browse.Size.Height / 2) +80;
+
+
+
+
+            
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Play_it__winForm_.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Play_it__winForm_.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Play_it__winForm_.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Play_it__winForm_.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Arrow_1_2x {
+        public static System.Drawing.Bitmap Arrow_1_2x {
             get {
                 object obj = ResourceManager.GetObject("Arrow_1@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Arrow_2_2x {
+        public static System.Drawing.Bitmap Arrow_2_2x {
             get {
                 object obj = ResourceManager.GetObject("Arrow_2@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_minus_10s {
+        public static System.Drawing.Bitmap btn_minus_10s {
             get {
                 object obj = ResourceManager.GetObject("btn minus 10s", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn_plus_10s {
+        public static System.Drawing.Bitmap btn_plus_10s {
             get {
                 object obj = ResourceManager.GetObject("btn plus 10s", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap close {
+        public static System.Drawing.Bitmap close {
             get {
                 object obj = ResourceManager.GetObject("close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap high_vioce {
+        public static System.Drawing.Bitmap high_vioce {
             get {
                 object obj = ResourceManager.GetObject("high vioce", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,17 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo_icon {
+        public static System.Drawing.Bitmap icon__128_ {
+            get {
+                object obj = ResourceManager.GetObject("icon__128_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap logo_icon {
             get {
                 object obj = ResourceManager.GetObject("logo_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +143,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo_icon_1_3x {
+        public static System.Drawing.Bitmap logo_icon_1_3x {
             get {
                 object obj = ResourceManager.GetObject("logo_icon_1@3x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +153,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap low_voice {
+        public static System.Drawing.Bitmap low_voice {
             get {
                 object obj = ResourceManager.GetObject("low voice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +163,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap max_1 {
+        public static System.Drawing.Bitmap max_1 {
             get {
                 object obj = ResourceManager.GetObject("max_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +173,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap max2 {
+        public static System.Drawing.Bitmap max2 {
             get {
                 object obj = ResourceManager.GetObject("max2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +183,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap max3 {
+        public static System.Drawing.Bitmap max3 {
             get {
                 object obj = ResourceManager.GetObject("max3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +193,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap maxSquare {
+        public static System.Drawing.Bitmap maxSquare {
             get {
                 object obj = ResourceManager.GetObject("maxSquare", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +203,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap maxSquare2 {
+        public static System.Drawing.Bitmap maxSquare2 {
             get {
                 object obj = ResourceManager.GetObject("maxSquare2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +213,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap min {
+        public static System.Drawing.Bitmap min {
             get {
                 object obj = ResourceManager.GetObject("min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +223,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap min2 {
+        public static System.Drawing.Bitmap min2 {
             get {
                 object obj = ResourceManager.GetObject("min2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +233,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap min3 {
+        public static System.Drawing.Bitmap min3 {
             get {
                 object obj = ResourceManager.GetObject("min3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +243,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap next_button {
+        public static System.Drawing.Bitmap next_button {
             get {
                 object obj = ResourceManager.GetObject("next button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +253,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pause_button {
+        public static System.Drawing.Bitmap pause_button {
             get {
                 object obj = ResourceManager.GetObject("pause button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +263,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pervious_button {
+        public static System.Drawing.Bitmap pervious_button {
             get {
                 object obj = ResourceManager.GetObject("pervious button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +273,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Puls_2x {
+        public static System.Drawing.Bitmap Puls_2x {
             get {
                 object obj = ResourceManager.GetObject("Puls@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +283,7 @@ namespace Play_it__winForm_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap start_button {
+        public static System.Drawing.Bitmap start_button {
             get {
                 object obj = ResourceManager.GetObject("start button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
