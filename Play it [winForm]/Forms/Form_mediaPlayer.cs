@@ -34,7 +34,6 @@ namespace Play_it__winForm_
         {
             InitializeComponent();
             trackBar_media.Value = 0;
-            
         }
 
       public Form_mediaPlayer(string f, string p)
@@ -67,14 +66,14 @@ namespace Play_it__winForm_
                 if (wmp.playState == WMPLib.WMPPlayState.wmppsPlaying)
                 {
                     trackBar_media.Maximum = (int) wmp.Ctlcontrols.currentItem.duration;
-                    trackBar_media.Value = (int)wmp.Ctlcontrols.currentPosition;
+                    trackBar_media.Value = (int) wmp.Ctlcontrols.currentPosition;
 
                 }
 
                 lbl_inProgress.Text = wmp.Ctlcontrols.currentPositionString;
                 lbl_duration.Text = wmp.Ctlcontrols.currentItem.durationString;
 
-                        // when media reach to th end
+                        // when media reach to the end
                 if (trackBar_media.Value == trackBar_media.Maximum)
                 {
                     timer1.Stop();
@@ -82,10 +81,7 @@ namespace Play_it__winForm_
                     btn_pause.Hide();
                     trackBar_media.Value = 0;
                     lbl_duration.Text = "00:00:00";
-                    lbl_inProgress.Text = "00:00";
-                    trackBar_media.Value = 0;
-                    btn_pause.Hide();
-                    btn_start.Show();
+                    lbl_inProgress.Text = "00:00"; 
                     wmp.Ctlcontrols.stop();
 
                 }
@@ -127,6 +123,9 @@ namespace Play_it__winForm_
                 btn_start.Show();
 
             }
+
+            
+
         }
 
         private void btn_close_Click(object sender, EventArgs e)

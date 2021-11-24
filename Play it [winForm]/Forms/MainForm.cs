@@ -29,7 +29,7 @@ namespace Play_it__winForm_
             uc.Dock = DockStyle.Fill;
             pnl_switch.Controls.Clear();
             pnl_switch.Controls.Add(uc);
-            uc.BringToFront();
+            //uc.BringToFront();
 
         }
 

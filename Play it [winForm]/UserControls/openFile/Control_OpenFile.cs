@@ -56,8 +56,6 @@ namespace Play_it__winForm_.UserControls.openFile
 
         }
 
-      
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             

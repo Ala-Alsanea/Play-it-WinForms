@@ -195,7 +195,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
-    <Folder Include="img\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_%28128%29.png" />
