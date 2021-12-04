@@ -24,12 +24,12 @@ namespace Play_it__winForm_
             
 
         //function
-        void userControl_open(UserControl uc)
+        public void userControl_open(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
             pnl_switch.Controls.Clear();
             pnl_switch.Controls.Add(uc);
-            //uc.BringToFront();
+            uc.BringToFront();
 
         }
 
@@ -93,7 +93,7 @@ namespace Play_it__winForm_
 
         private void btn_Playlist_Click(object sender, EventArgs e)
         {
-            Control_playlist listOfPlaylist = new Control_playlist();
+            Control_ListOfPlaylist listOfPlaylist = new Control_ListOfPlaylist();
             userControl_open(listOfPlaylist);
             Guna2Button btn = (Guna2Button)sender;
             restBtnColor(btn_OpenFile,btn_Playlist);

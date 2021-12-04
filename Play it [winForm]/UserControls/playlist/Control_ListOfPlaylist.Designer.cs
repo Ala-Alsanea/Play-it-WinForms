@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_next = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_update = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.txt_PLs = new Guna.UI2.WinForms.Guna2TextBox();
             this.DGV_PLs = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btn_add = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_update = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_next = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_PLs)).BeginInit();
@@ -65,6 +65,104 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1075, 607);
             this.panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(91, 544);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 24);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.Animated = true;
+            this.btn_Delete.BorderRadius = 10;
+            this.btn_Delete.CheckedState.Parent = this.btn_Delete;
+            this.btn_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Delete.CustomImages.Parent = this.btn_Delete;
+            this.btn_Delete.Enabled = false;
+            this.btn_Delete.FillColor = System.Drawing.Color.Red;
+            this.btn_Delete.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.ForeColor = System.Drawing.Color.White;
+            this.btn_Delete.HoverState.FillColor = System.Drawing.Color.Maroon;
+            this.btn_Delete.HoverState.Parent = this.btn_Delete;
+            this.btn_Delete.Location = new System.Drawing.Point(860, 395);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.ShadowDecoration.Parent = this.btn_Delete;
+            this.btn_Delete.Size = new System.Drawing.Size(107, 57);
+            this.btn_Delete.TabIndex = 6;
+            this.btn_Delete.Text = "Delete";
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            // 
+            // btn_next
+            // 
+            this.btn_next.Animated = true;
+            this.btn_next.BorderRadius = 10;
+            this.btn_next.CheckedState.Parent = this.btn_next;
+            this.btn_next.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_next.CustomImages.Parent = this.btn_next;
+            this.btn_next.Enabled = false;
+            this.btn_next.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_next.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_next.ForeColor = System.Drawing.Color.White;
+            this.btn_next.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_next.HoverState.Parent = this.btn_next;
+            this.btn_next.Location = new System.Drawing.Point(917, 544);
+            this.btn_next.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_next.Name = "btn_next";
+            this.btn_next.ShadowDecoration.Parent = this.btn_next;
+            this.btn_next.Size = new System.Drawing.Size(107, 45);
+            this.btn_next.TabIndex = 6;
+            this.btn_next.Text = "NEXT";
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
+            // 
+            // btn_update
+            // 
+            this.btn_update.Animated = true;
+            this.btn_update.BorderRadius = 10;
+            this.btn_update.CheckedState.Parent = this.btn_update;
+            this.btn_update.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_update.CustomImages.Parent = this.btn_update;
+            this.btn_update.Enabled = false;
+            this.btn_update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_update.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.ForeColor = System.Drawing.Color.White;
+            this.btn_update.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_update.HoverState.Parent = this.btn_update;
+            this.btn_update.Location = new System.Drawing.Point(745, 395);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.ShadowDecoration.Parent = this.btn_update;
+            this.btn_update.Size = new System.Drawing.Size(107, 57);
+            this.btn_update.TabIndex = 6;
+            this.btn_update.Text = "Update";
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            // 
+            // btn_add
+            // 
+            this.btn_add.Animated = true;
+            this.btn_add.BorderRadius = 10;
+            this.btn_add.CheckedState.Parent = this.btn_add;
+            this.btn_add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_add.CustomImages.Parent = this.btn_add;
+            this.btn_add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.White;
+            this.btn_add.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
+            this.btn_add.HoverState.Parent = this.btn_add;
+            this.btn_add.Location = new System.Drawing.Point(630, 395);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.ShadowDecoration.Parent = this.btn_add;
+            this.btn_add.Size = new System.Drawing.Size(107, 57);
+            this.btn_add.TabIndex = 6;
+            this.btn_add.Text = "ADD";
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // txt_PLs
             // 
@@ -102,32 +200,32 @@
             this.DGV_PLs.AllowUserToDeleteRows = false;
             this.DGV_PLs.AllowUserToResizeColumns = false;
             this.DGV_PLs.AllowUserToResizeRows = false;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            this.DGV_PLs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.DGV_PLs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DGV_PLs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGV_PLs.BackgroundColor = System.Drawing.Color.White;
             this.DGV_PLs.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGV_PLs.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGV_PLs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_PLs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_PLs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DGV_PLs.ColumnHeadersHeight = 50;
             this.DGV_PLs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_PLs.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_PLs.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_PLs.DefaultCellStyle = dataGridViewCellStyle7;
             this.DGV_PLs.EnableHeadersVisualStyles = false;
             this.DGV_PLs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
             this.DGV_PLs.Location = new System.Drawing.Point(46, 103);
@@ -137,14 +235,14 @@
             this.DGV_PLs.RowHeadersVisible = false;
             this.DGV_PLs.RowHeadersWidth = 50;
             this.DGV_PLs.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_PLs.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_PLs.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.DGV_PLs.RowTemplate.Height = 24;
             this.DGV_PLs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGV_PLs.Size = new System.Drawing.Size(978, 273);
@@ -190,114 +288,18 @@
             // 
             this.guna2Elipse1.BorderRadius = 20;
             // 
-            // btn_add
-            // 
-            this.btn_add.Animated = true;
-            this.btn_add.BorderRadius = 10;
-            this.btn_add.CheckedState.Parent = this.btn_add;
-            this.btn_add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_add.CustomImages.Parent = this.btn_add;
-            this.btn_add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
-            this.btn_add.HoverState.Parent = this.btn_add;
-            this.btn_add.Location = new System.Drawing.Point(630, 395);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.ShadowDecoration.Parent = this.btn_add;
-            this.btn_add.Size = new System.Drawing.Size(107, 57);
-            this.btn_add.TabIndex = 6;
-            this.btn_add.Text = "ADD";
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
-            // 
-            // btn_update
-            // 
-            this.btn_update.Animated = true;
-            this.btn_update.BorderRadius = 10;
-            this.btn_update.CheckedState.Parent = this.btn_update;
-            this.btn_update.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_update.CustomImages.Parent = this.btn_update;
-            this.btn_update.Enabled = false;
-            this.btn_update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            this.btn_update.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            this.btn_update.HoverState.Parent = this.btn_update;
-            this.btn_update.Location = new System.Drawing.Point(745, 395);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.ShadowDecoration.Parent = this.btn_update;
-            this.btn_update.Size = new System.Drawing.Size(107, 57);
-            this.btn_update.TabIndex = 6;
-            this.btn_update.Text = "Update";
-            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
-            // 
-            // btn_Delete
-            // 
-            this.btn_Delete.Animated = true;
-            this.btn_Delete.BorderRadius = 10;
-            this.btn_Delete.CheckedState.Parent = this.btn_Delete;
-            this.btn_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Delete.CustomImages.Parent = this.btn_Delete;
-            this.btn_Delete.Enabled = false;
-            this.btn_Delete.FillColor = System.Drawing.Color.Red;
-            this.btn_Delete.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.HoverState.FillColor = System.Drawing.Color.Maroon;
-            this.btn_Delete.HoverState.Parent = this.btn_Delete;
-            this.btn_Delete.Location = new System.Drawing.Point(860, 395);
-            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.ShadowDecoration.Parent = this.btn_Delete;
-            this.btn_Delete.Size = new System.Drawing.Size(107, 57);
-            this.btn_Delete.TabIndex = 6;
-            this.btn_Delete.Text = "Delete";
-            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
-            // 
-            // btn_next
-            // 
-            this.btn_next.Animated = true;
-            this.btn_next.BorderRadius = 10;
-            this.btn_next.CheckedState.Parent = this.btn_next;
-            this.btn_next.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_next.CustomImages.Parent = this.btn_next;
-            this.btn_next.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            this.btn_next.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_next.ForeColor = System.Drawing.Color.White;
-            this.btn_next.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
-            this.btn_next.HoverState.Parent = this.btn_next;
-            this.btn_next.Location = new System.Drawing.Point(917, 544);
-            this.btn_next.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_next.Name = "btn_next";
-            this.btn_next.ShadowDecoration.Parent = this.btn_next;
-            this.btn_next.Size = new System.Drawing.Size(107, 45);
-            this.btn_next.TabIndex = 6;
-            this.btn_next.Text = "NEXT";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(91, 544);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 24);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Control_playlist
+            // Control_ListOfPlaylist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Control_playlist";
+            this.Name = "Control_ListOfPlaylist";
             this.Size = new System.Drawing.Size(1075, 607);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

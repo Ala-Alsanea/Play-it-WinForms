@@ -14,13 +14,14 @@ namespace Play_it__winForm_.UserControls.playlist.Classes
         //vAr
         private string toDB = Properties.Settings.Default.ToDB;
 
-        private string selectTemp = "select id , name , path,  playlist_ID from PlaylistS ";
-        private string insertTemp = "Insert into PlaylistS (name,path) Values (@NAME,@PATH)";
+     //   private string selectTemp = "select id , name , path,  playlist_ID from PlaylistS ";
+        //private string insertTemp = "Insert into PlaylistS (name,path) Values (@NAME,@PATH)";
 
         private string select = "select id , name , path,  playlist_ID from PlaylistS where playlist_ID=@PLAYLIST_ID ";
         private string insert = "Insert into PlaylistS (name,path,playlist_ID) Values (@NAME,@PATH,@PLAYLIST_ID)";
         private string delete = "Delete from PlaylistS  where Id=@ID";
 
+        private string delete_PL = "Delete from PlaylistS  where playlist_ID=@PLAYLIST_ID";
 
         //property
         public string ID { get; set; }
@@ -32,26 +33,7 @@ namespace Play_it__winForm_.UserControls.playlist.Classes
 
 
         // fun ### unedited
-
-                // temp fun
-        public DataTable getData()
-        {
-            DataTable data = new DataTable();
-
-            using (SqlConnection connection = new SqlConnection(toDB))
-            {
-                connection.Open();
-                using (SqlCommand command = new SqlCommand(selectTemp, connection))
-                {
-                    
-                    (new SqlDataAdapter(command)).Fill(data);
-                }
-            }
-
-            return data;
-
-        }
-
+        
 
 
         public DataTable getData(Playlist Obj)
@@ -80,11 +62,11 @@ namespace Play_it__winForm_.UserControls.playlist.Classes
             using (SqlConnection connection = new SqlConnection(toDB))
             {
                 connection.Open();
-                using (SqlCommand command = new SqlCommand(insertTemp, connection))
+                using (SqlCommand command = new SqlCommand(insert, connection))
                 {
                     command.Parameters.AddWithValue("@NAME", Obj.NAME);
                     command.Parameters.AddWithValue("@PATH", Obj.PATH);
-                   // command.Parameters.AddWithValue("@PLAYLIST_ID", 0);
+                   command.Parameters.AddWithValue("@PLAYLIST_ID", Obj.PLAYLIST_ID);
                     row = command.ExecuteNonQuery();
                 }
 
@@ -113,9 +95,23 @@ namespace Play_it__winForm_.UserControls.playlist.Classes
         }
 
 
+        public void Deleteplaylst(string id)
+        {
+
+            int row = 0;
+
+            using (SqlConnection connection = new SqlConnection(toDB))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand(delete_PL, connection))
+                {
+                    command.Parameters.AddWithValue("@PLAYLIST_ID", id);
+                    row = command.ExecuteNonQuery();
+                }
+
+            }
 
 
-
-
+        }
     }
 }

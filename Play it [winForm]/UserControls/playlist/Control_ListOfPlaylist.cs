@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Play_it__winForm_.UserControls.playlist.Classes;
 
 namespace Play_it__winForm_.UserControls.playlist
 {
@@ -14,7 +15,7 @@ namespace Play_it__winForm_.UserControls.playlist
     {
         // vAr
         private ListOfPlaylist LOPLs = new ListOfPlaylist();
-
+        private Control_playlist pl;
 
         // fun
 
@@ -39,6 +40,7 @@ namespace Play_it__winForm_.UserControls.playlist
         {
             btn_update.Enabled = false;
             btn_Delete.Enabled = false;
+            btn_next.Enabled = false;
         }
 
 
@@ -46,6 +48,7 @@ namespace Play_it__winForm_.UserControls.playlist
         {
             btn_update.Enabled = true;
             btn_Delete.Enabled = true;
+            btn_next.Enabled = true;
         }
 
         // gen fun
@@ -123,14 +126,14 @@ namespace Play_it__winForm_.UserControls.playlist
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            // txt_PLs.Text = txt_PLs.Text.Trim();
-            // if (txt_PLs.Text != "")
-            // {
+            Playlist pl = new Playlist();
+            pl.Deleteplaylst(LOPLs.ID);
+
             LOPLs.PLAYLIST = txt_PLs.Text;
             LOPLs.DeletePlaylist(LOPLs);
             DGV_PLs.DataSource = LOPLs.getData();
 
-            // }
+           
 
             txt_PLs.Clear();
             lastSelectrd();
@@ -144,6 +147,21 @@ namespace Play_it__winForm_.UserControls.playlist
             {
                 blockBtns();
             }
+        }
+
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+            pl = new Control_playlist(LOPLs.ID, LOPLs.PLAYLIST);
+
+            ControlCollection control = MainForm.ActiveForm.ActiveControl.Parent.Controls;
+            
+            label1.Text = MainForm.ActiveForm.ActiveControl.Parent.Name;
+            pl.Dock = DockStyle.Fill;
+            control.Clear();
+            control.Add(pl);
+            pl.BringToFront();
+            // this.Hide();
+
         }
     }
 }
