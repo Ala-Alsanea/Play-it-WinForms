@@ -15,16 +15,17 @@ namespace Play_it__winForm_
 
         //ver
         private string path, file;
-        
-        
+        Bitmap StateImgBtn = global::Play_it__winForm_.Properties.Resources.logo_icon_1_3x;
+        Bitmap PauseImgBtn = global::Play_it__winForm_.Properties.Resources.pause_button;
+
+
         //property
 
         //func
         void startMedia()
         {
             wmp.Ctlcontrols.play();
-            btn_start.Hide();
-            btn_pause.Show();
+            btn_start.Image = PauseImgBtn;
         }
 
 
@@ -77,8 +78,7 @@ namespace Play_it__winForm_
                 if (trackBar_media.Value == trackBar_media.Maximum)
                 {
                     timer1.Stop();
-                    btn_start.Show();
-                    btn_pause.Hide();
+                    btn_start.Image = StateImgBtn;
                     trackBar_media.Value = 0;
                     lbl_duration.Text = "00:00:00";
                     lbl_inProgress.Text = "00:00"; 
@@ -94,7 +94,7 @@ namespace Play_it__winForm_
 
             }
 
-            // init track bar
+            
            
 
         }
@@ -104,29 +104,7 @@ namespace Play_it__winForm_
             wmp.Ctlcontrols.currentPosition = trackBar_media.Value;
         }
 
-        private void btn_start_Click(object sender, EventArgs e)
-        {
-            if (wmp.URL != null)
-            {
-                startMedia();
-
-            }
- 
-        }
-
-        private void btn_pause_Click(object sender, EventArgs e)
-        {
-            if (wmp.URL != null)
-            {
-                wmp.Ctlcontrols.pause();
-                btn_pause.Hide();
-                btn_start.Show();
-
-            }
-
-            
-
-        }
+        
 
         private void btn_close_Click(object sender, EventArgs e)
         {
@@ -163,6 +141,67 @@ namespace Play_it__winForm_
             this.Close();
         }
 
+        private void btn_start_Click_1(object sender, EventArgs e)
+        {
+
+            if(wmp.URL == null)
+                return;
+
+            if (wmp.playState != WMPLib.WMPPlayState.wmppsPaused )
+            {
+                btn_start.Image = StateImgBtn;
+                wmp.Ctlcontrols.pause();
+                return;
+            }
+
+
+            if (wmp.URL != null)
+            {
+                btn_start.Image = PauseImgBtn;
+                wmp.Ctlcontrols.play();
+            }
+        }
+
+        private void btn_minus_Click(object sender, EventArgs e)
+        {
+            if (wmp.URL == null)
+                return;
+
+            wmp.Ctlcontrols.currentPosition -= 10;
+        }
+
+        private void btn_plus_Click(object sender, EventArgs e)
+        {
+            if (wmp.URL == null)
+                return;
+
+            wmp.Ctlcontrols.currentPosition += 10;
+        }
+
+        private void btn_soundBar_Click(object sender, EventArgs e)
+        {
+
+            if (wmp.settings.mute)
+            {
+                wmp.settings.mute = false;
+                return;
+            }
+
+            if (trackBar_voice.Visible)
+            {
+                trackBar_voice.Visible = false;
+                return;
+            }
+
+            trackBar_voice.Visible = true;
+        }
+
+        private void btn_mute_Click(object sender, EventArgs e)
+        {
+            wmp.settings.mute = true;
+            trackBar_voice.Visible = false;
+        }
+
         private void btn_openFile_Click(object sender, EventArgs e)
         {
             openFileDialog1.Filter = " video(*.mp4)|*.mp4| Audio(*.mp3)|*.mp3";
@@ -178,8 +217,9 @@ namespace Play_it__winForm_
                 wmp.settings.mute = false;
                 timer1.Start();
                 pic_logo.Hide();
-                btn_start.Hide();
-                btn_pause.Show();
+
+                btn_start.Image = PauseImgBtn;
+
                 lbl_title.Text += " ( " + file + " )";
 
             }
