@@ -48,7 +48,7 @@ namespace Play_it__winForm_
         public MainForm()
         {
             InitializeComponent();
-            btn_OpenFile.PerformClick();
+            btn_Playlist.PerformClick();
         }
 
         private void btn_close_Click(object sender, EventArgs e)
