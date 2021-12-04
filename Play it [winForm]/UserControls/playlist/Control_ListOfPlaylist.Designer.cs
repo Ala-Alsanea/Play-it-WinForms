@@ -1,6 +1,6 @@
 ﻿namespace Play_it__winForm_.UserControls.playlist
 {
-    partial class Control_playlist
+    partial class Control_ListOfPlaylist
     {
         /// <summary> 
         /// Required designer variable.

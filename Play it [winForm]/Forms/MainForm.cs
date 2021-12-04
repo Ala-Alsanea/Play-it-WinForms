@@ -93,7 +93,7 @@ namespace Play_it__winForm_
 
         private void btn_Playlist_Click(object sender, EventArgs e)
         {
-            Control_playlist cp = new Control_playlist();
+            Control_ListOfPlaylist cp = new Control_ListOfPlaylist();
             userControl_open(cp);
             Guna2Button btn = (Guna2Button)sender;
             restBtnColor(btn_OpenFile,btn_Playlist);

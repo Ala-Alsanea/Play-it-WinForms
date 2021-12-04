@@ -89,11 +89,11 @@
     <Compile Include="UserControls\openFile\Control_OpenFile.Designer.cs">
       <DependentUpon>Control_OpenFile.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\playlist\Control_playlist.cs">
+    <Compile Include="UserControls\playlist\Control_ListOfPlaylist.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\playlist\Control_playlist.Designer.cs">
-      <DependentUpon>Control_playlist.cs</DependentUpon>
+    <Compile Include="UserControls\playlist\Control_ListOfPlaylist.Designer.cs">
+      <DependentUpon>Control_ListOfPlaylist.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\playlist\ListOfPlaylist.cs" />
     <EmbeddedResource Include="Forms\MainForm.resx">
@@ -115,8 +115,8 @@
     <EmbeddedResource Include="UserControls\openFile\Control_OpenFile.resx">
       <DependentUpon>Control_OpenFile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\playlist\Control_playlist.resx">
-      <DependentUpon>Control_playlist.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\playlist\Control_ListOfPlaylist.resx">
+      <DependentUpon>Control_ListOfPlaylist.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

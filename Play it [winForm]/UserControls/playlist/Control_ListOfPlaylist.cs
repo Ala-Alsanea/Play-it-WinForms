@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Play_it__winForm_.UserControls.playlist
 {
-    public partial class Control_playlist : UserControl
+    public partial class Control_ListOfPlaylist : UserControl
     {
         // vAr
         private ListOfPlaylist LOPLs = new ListOfPlaylist();
@@ -49,7 +49,7 @@ namespace Play_it__winForm_.UserControls.playlist
         }
 
         // gen fun
-        public Control_playlist()
+        public Control_ListOfPlaylist()
         {
             InitializeComponent();
             DGV_PLs.DataSource = LOPLs.getData();
