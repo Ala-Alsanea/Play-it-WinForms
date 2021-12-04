@@ -89,13 +89,20 @@
     <Compile Include="UserControls\openFile\Control_OpenFile.Designer.cs">
       <DependentUpon>Control_OpenFile.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\playlist\Classes\Playlist.cs" />
     <Compile Include="UserControls\playlist\Control_ListOfPlaylist.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\playlist\Control_ListOfPlaylist.Designer.cs">
       <DependentUpon>Control_ListOfPlaylist.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\playlist\ListOfPlaylist.cs" />
+    <Compile Include="UserControls\playlist\Classes\ListOfPlaylist.cs" />
+    <Compile Include="UserControls\playlist\Control_playlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\playlist\Control_playlist.Designer.cs">
+      <DependentUpon>Control_playlist.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\playlist\Control_ListOfPlaylist.resx">
       <DependentUpon>Control_ListOfPlaylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\playlist\Control_playlist.resx">
+      <DependentUpon>Control_playlist.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -235,6 +245,7 @@
     </Content>
     <Content Include="icon_128.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

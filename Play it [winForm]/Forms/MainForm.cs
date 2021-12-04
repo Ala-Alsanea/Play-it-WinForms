@@ -93,8 +93,8 @@ namespace Play_it__winForm_
 
         private void btn_Playlist_Click(object sender, EventArgs e)
         {
-            Control_ListOfPlaylist cp = new Control_ListOfPlaylist();
-            userControl_open(cp);
+            Control_playlist listOfPlaylist = new Control_playlist();
+            userControl_open(listOfPlaylist);
             Guna2Button btn = (Guna2Button)sender;
             restBtnColor(btn_OpenFile,btn_Playlist);
             btn.FillColor = Color.FromArgb(255, 40, 127, 178);
