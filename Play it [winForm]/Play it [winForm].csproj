@@ -11,6 +11,21 @@
     <AssemblyName>Play it [winForm]</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -67,12 +82,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="UserControls\openFile\Control_OpenFile.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\openFile\Control_OpenFile.Designer.cs">
       <DependentUpon>Control_OpenFile.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\playlist\Classes\Playlist.cs" />
+    <Compile Include="UserControls\playlist\Control_ListOfPlaylist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\playlist\Control_ListOfPlaylist.Designer.cs">
+      <DependentUpon>Control_ListOfPlaylist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\playlist\Classes\ListOfPlaylist.cs" />
     <Compile Include="UserControls\playlist\Control_playlist.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -97,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\openFile\Control_OpenFile.resx">
       <DependentUpon>Control_OpenFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\playlist\Control_ListOfPlaylist.resx">
+      <DependentUpon>Control_ListOfPlaylist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\playlist\Control_playlist.resx">
       <DependentUpon>Control_playlist.cs</DependentUpon>
@@ -194,14 +221,31 @@
     <None Include="Resources\Puls%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_%28128%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>DB.mdf</DependentUpon>
+    </Content>
     <Content Include="icon_128.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

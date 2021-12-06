@@ -28,48 +28,225 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_next = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_browse = new Guna.UI2.WinForms.Guna2Button();
+            this.DGV_PL = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.lbl_playlistName = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btn_back = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_PL)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // btn_Delete
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(806, 493);
-            this.panel1.TabIndex = 1;
+            this.btn_Delete.Animated = true;
+            this.btn_Delete.BorderRadius = 10;
+            this.btn_Delete.CheckedState.Parent = this.btn_Delete;
+            this.btn_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Delete.CustomImages.Parent = this.btn_Delete;
+            this.btn_Delete.Enabled = false;
+            this.btn_Delete.FillColor = System.Drawing.Color.Red;
+            this.btn_Delete.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.ForeColor = System.Drawing.Color.White;
+            this.btn_Delete.HoverState.FillColor = System.Drawing.Color.Maroon;
+            this.btn_Delete.HoverState.Parent = this.btn_Delete;
+            this.btn_Delete.Location = new System.Drawing.Point(873, 436);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.ShadowDecoration.Parent = this.btn_Delete;
+            this.btn_Delete.Size = new System.Drawing.Size(107, 57);
+            this.btn_Delete.TabIndex = 9;
+            this.btn_Delete.Text = "Delete";
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
-            // label2
+            // btn_next
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(30, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = " Playlist";
+            this.btn_next.Animated = true;
+            this.btn_next.BorderRadius = 10;
+            this.btn_next.CheckedState.Parent = this.btn_next;
+            this.btn_next.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_next.CustomImages.Parent = this.btn_next;
+            this.btn_next.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_next.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_next.ForeColor = System.Drawing.Color.White;
+            this.btn_next.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_next.HoverState.Parent = this.btn_next;
+            this.btn_next.Location = new System.Drawing.Point(922, 534);
+            this.btn_next.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_next.Name = "btn_next";
+            this.btn_next.ShadowDecoration.Parent = this.btn_next;
+            this.btn_next.Size = new System.Drawing.Size(107, 45);
+            this.btn_next.TabIndex = 10;
+            this.btn_next.Text = "NEXT";
+            // 
+            // btn_browse
+            // 
+            this.btn_browse.Animated = true;
+            this.btn_browse.BorderRadius = 10;
+            this.btn_browse.CheckedState.Parent = this.btn_browse;
+            this.btn_browse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_browse.CustomImages.Parent = this.btn_browse;
+            this.btn_browse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_browse.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_browse.ForeColor = System.Drawing.Color.White;
+            this.btn_browse.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
+            this.btn_browse.HoverState.Parent = this.btn_browse;
+            this.btn_browse.Location = new System.Drawing.Point(744, 436);
+            this.btn_browse.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_browse.Name = "btn_browse";
+            this.btn_browse.ShadowDecoration.Parent = this.btn_browse;
+            this.btn_browse.Size = new System.Drawing.Size(107, 57);
+            this.btn_browse.TabIndex = 11;
+            this.btn_browse.Text = "Browse";
+            this.btn_browse.Click += new System.EventHandler(this.btn_browse_Click);
+            // 
+            // DGV_PL
+            // 
+            this.DGV_PL.AllowUserToAddRows = false;
+            this.DGV_PL.AllowUserToDeleteRows = false;
+            this.DGV_PL.AllowUserToResizeColumns = false;
+            this.DGV_PL.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DGV_PL.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGV_PL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGV_PL.BackgroundColor = System.Drawing.Color.White;
+            this.DGV_PL.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGV_PL.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGV_PL.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_PL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DGV_PL.ColumnHeadersHeight = 50;
+            this.DGV_PL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DGV_PL.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_PL.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DGV_PL.EnableHeadersVisualStyles = false;
+            this.DGV_PL.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.DGV_PL.Location = new System.Drawing.Point(51, 95);
+            this.DGV_PL.Name = "DGV_PL";
+            this.DGV_PL.ReadOnly = true;
+            this.DGV_PL.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGV_PL.RowHeadersVisible = false;
+            this.DGV_PL.RowHeadersWidth = 50;
+            this.DGV_PL.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_PL.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DGV_PL.RowTemplate.Height = 24;
+            this.DGV_PL.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV_PL.Size = new System.Drawing.Size(978, 319);
+            this.DGV_PL.StandardTab = true;
+            this.DGV_PL.TabIndex = 8;
+            this.DGV_PL.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.DGV_PL.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGV_PL.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DGV_PL.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DGV_PL.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DGV_PL.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DGV_PL.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DGV_PL.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.DGV_PL.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.DGV_PL.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGV_PL.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.DGV_PL.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DGV_PL.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DGV_PL.ThemeStyle.HeaderStyle.Height = 50;
+            this.DGV_PL.ThemeStyle.ReadOnly = true;
+            this.DGV_PL.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGV_PL.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGV_PL.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.DGV_PL.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.DGV_PL.ThemeStyle.RowsStyle.Height = 24;
+            this.DGV_PL.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGV_PL.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.DGV_PL.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_PL_CellClick);
+            // 
+            // lbl_playlistName
+            // 
+            this.lbl_playlistName.AutoSize = true;
+            this.lbl_playlistName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_playlistName.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_playlistName.Location = new System.Drawing.Point(45, 27);
+            this.lbl_playlistName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_playlistName.Name = "lbl_playlistName";
+            this.lbl_playlistName.Size = new System.Drawing.Size(76, 32);
+            this.lbl_playlistName.TabIndex = 7;
+            this.lbl_playlistName.Text = "name";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btn_back
+            // 
+            this.btn_back.Animated = true;
+            this.btn_back.BorderRadius = 10;
+            this.btn_back.CheckedState.Parent = this.btn_back;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_back.CustomImages.Parent = this.btn_back;
+            this.btn_back.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_back.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.ForeColor = System.Drawing.Color.White;
+            this.btn_back.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(171)))), ((int)(((byte)(242)))));
+            this.btn_back.HoverState.Parent = this.btn_back;
+            this.btn_back.Location = new System.Drawing.Point(51, 534);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.ShadowDecoration.Parent = this.btn_back;
+            this.btn_back.Size = new System.Drawing.Size(107, 45);
+            this.btn_back.TabIndex = 10;
+            this.btn_back.Text = "BACK";
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // Control_playlist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.Controls.Add(this.btn_Delete);
+            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.btn_next);
+            this.Controls.Add(this.btn_browse);
+            this.Controls.Add(this.DGV_PL);
+            this.Controls.Add(this.lbl_playlistName);
             this.Name = "Control_playlist";
-            this.Size = new System.Drawing.Size(806, 493);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Size = new System.Drawing.Size(1075, 607);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_PL)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button btn_Delete;
+        private Guna.UI2.WinForms.Guna2Button btn_next;
+        private Guna.UI2.WinForms.Guna2Button btn_browse;
+        private Guna.UI2.WinForms.Guna2DataGridView DGV_PL;
+        private System.Windows.Forms.Label lbl_playlistName;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private Guna.UI2.WinForms.Guna2Button btn_back;
     }
 }
